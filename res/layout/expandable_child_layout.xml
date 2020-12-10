@@ -1,0 +1,26 @@
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="45dip"
+	xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<ImageView
+		    android:id="@+id/user_pic"
+		    android:layout_width="70dip"
+		    android:layout_height="70dip"
+		    android:paddingLeft="2dip"
+		    android:paddingRight="2dip"
+		    android:paddingTop="2dip"
+
+			android:scaleType="centerCrop"
+		    android:src="@drawable/default_venue"
+	/>
+		
+	<TextView android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:paddingLeft="5dip"
+		android:paddingRight="5dip" 
+		android:textSize="17dip"
+		android:gravity="center_vertical" 
+		android:id="@+id/labelChild"
+		android:text="Children" 
+		android:textColor="#ffCCCC22"></TextView>
+</LinearLayout>

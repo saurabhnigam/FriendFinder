@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="4dip"
+    android:background="#7b96bd"
+>
+
+	<ViewAnimator
+		android:id="@+id/animator"
+	    android:layout_width="fill_parent" 
+	    android:layout_height="fill_parent"
+	    android:paddingTop="16dip"
+	>
+		<LinearLayout
+			android:id="@+id/v0"
+		    android:orientation="vertical"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:padding="32dip"
+		>
+			<TextView
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="Enter your email:"
+			    android:textSize="16dip"
+			    android:textColor="#eee"
+			    android:paddingBottom="8dip"
+			/>
+			<EditText
+				android:id="@+id/email"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			/>
+
+			<TextView
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:text="Enter your password:"
+			    android:textSize="16dip"
+			    android:textColor="#eee"
+			    android:paddingBottom="8dip"
+			/>
+			<EditText
+				android:id="@+id/passwd"
+			    android:layout_width="fill_parent" 
+			    android:layout_height="wrap_content" 
+			    android:password="true"
+			/>
+		</LinearLayout>
+		
+	</ViewAnimator>
+</LinearLayout>

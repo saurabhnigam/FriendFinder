@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="squares.four"
+      android:versionCode="1"
+      android:versionName="1.0">
+    <application android:icon="@drawable/sf" android:label="foursquaring"
+    android:theme="@style/HeaderTheme">
+    
+            <activity android:name=".activity.Launcher"
+                  android:label="foursquaring"
+                  android:screenOrientation="portrait"
+				  android:configChanges="keyboardHidden" 
+				>
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            </activity>
+         
+        <activity android:name=".activity.WebviewAuth"
+                  android:label="foursquaring"
+                  android:theme="@android:style/Theme.Dialog"
+                  android:screenOrientation="portrait"
+				  android:configChanges="keyboardHidden">
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+            
+        <activity android:name=".activity.OAuth"
+                  android:label="foursquaring"
+                  android:launchMode="singleInstance"
+                  android:screenOrientation="portrait"
+				  android:configChanges="keyboardHidden"
+	>
+            <intent-filter>
+				<action android:name="android.intent.action.VIEW" />
+				<category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+
+        <activity  android:name=".activity.SideMapper"
+                  android:label="foursquaring"
+                  android:screenOrientation="portrait"
+				  android:configChanges="keyboardHidden"/>
+                  
+    </application>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/> 
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.INTERNET" />
+<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+</manifest> 
